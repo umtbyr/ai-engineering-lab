@@ -1,0 +1,9 @@
+markdown-it-py>=4.0,<5.0
+sentence-transformers
+numpy
+openai
+fastapi
+uvicorn
+psycopg[binary,pool]
+pgvector
+python-dotenv

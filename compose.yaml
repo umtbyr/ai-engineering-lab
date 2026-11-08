@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: pgvector/pgvector:0.8.7-pg17-trixie
+    environment:
+      POSTGRES_USER: rag
+      POSTGRES_PASSWORD: rag_dev_password
+      POSTGRES_DB: ragdb
+    ports:
+      - "127.0.0.1:5433:5432"
+    volumes:
+      - rag_pgdata:/var/lib/postgresql/data
+
+volumes:
+  rag_pgdata:
